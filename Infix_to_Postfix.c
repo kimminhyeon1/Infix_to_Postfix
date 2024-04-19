@@ -40,7 +40,7 @@ void push(StackType* sptr, element item) {
 element pop(StackType* sptr) {
     if (is_empty(sptr)) {
         fprintf(stderr, "Stack is empty\n");
-        return '\0';  // Use a null character to indicate error
+        return '\0';  
     }
     return sptr->data[(sptr->top)--];
 }
@@ -48,7 +48,7 @@ element pop(StackType* sptr) {
 element peek(StackType* sptr) {
     if (is_empty(sptr)) {
         fprintf(stderr, "Stack is empty\n");
-        return '\0';  // Use a null character to indicate error
+        return '\0';  
     }
     return sptr->data[sptr->top];
 }
